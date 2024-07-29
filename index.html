@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ritik R.</title>
+    <link href="./index.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+      :root {
+        --bg-color: #ffffff;
+        --text-color: #000000;
+        --card-bg-color: #f8f9fa;
+        --nav-bg-color: #e9ecef;
+      }
+      [data-theme="dark"] {
+        --bg-color: #121212;
+        --text-color: #ffffff;
+        --card-bg-color: #ebebeb;
+        --nav-bg-color: #ffffff;
+      }
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      .timeline::before {
+        background-color: var(--text-color);
+      }
+      .timeline-body > ul > li::before {
+        color: var(--text-color);
+      }
+      .dark-mode-toggle {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Ritik's Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Resume</a>
+            </li> 
+          </ul>
+          <div class="form-check form-switch">
+            <input class="form-check-input dark-mode-toggle" type="checkbox" id="darkModeSwitch">
+            <label class="form-check-label" for="darkModeSwitch">Dark Mode</label>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <div class="text-center">
+                <img src="./IMG_9413.jpg" class="rounded mx-auto d-block" alt="ritik's img" width="50%" height="30%">
+              </div>
+            </div>
+            <div class="text-center">
+              <h5 class="card-title">Ritik Raj</h5>
+              <p class="card-text">Senior Software Engineer @ Link, </p>
+                <p>Budding Investor & Blogger</p>
+              <div>
+                <img src="./mortarboard-fill.svg" alt="">
+                <h5 class="card-title">Education</h5>
+                <ul class="list-group">
+                  <li class="list-group-item">Computer Science & Engineering - 2020
+                    <li>Jaypee University of Engineering & Technology</li>
+                    <br>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Hi! There,</h5>
+              <p class="card-text">
+                I am a Software Engineer (Backend) at Link. I have a profound interest in server-side programming and micro-services architecture. In my role, I am responsible for the services related to loyalty, the food business vertical, and contribute to the open-source SDK of Link. From a scalability standpoint, my services handle order volumes ranging from four to six hundred thousand a month. Additionally, my services are configured with auto-scaling and error-reporting tools such as Sentry and Slack notifications.
+              </p>
+              <p class="card-text">
+                Previously, I worked at Cognizant, Pune, as a Salesforce Developer, collaborating with the client Warner Bros and contributing to the backend using JavaScript, APEX, and SOQL. I also completed an internship as a Full-Stack Developer (MEAN) at dailyobject.com, New Delhi. During this period, I successfully deployed code to production for the first time, with an active user base exceeding 10,000.
+              </p>
+              <img src="./battery-charging.svg" alt="">
+              <h5>Interests</h5>
+              <div class="row">
+                <div class="col-md-5">
+                  <ul class="list-group">
+                    <li class="list-group-item">System-Design</li>
+                    <li class="list-group-item">Problem Solving</li>
+                    <li class="list-group-item">Scaling Systems</li>
+                  </ul>
+                </div>
+                <div class="col-md-7">
+                  <ul class="list-group">
+                    <li class="list-group-item">Stocks & Finance</li>
+                    <li class="list-group-item">Table Tennis</li>
+                    <li class="list-group-item">Bike Rides</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br><br><br><br><br><br>
+      <!-- Skills Section -->
+      <div class="row mt-5">
+        <div class="card col-sm-12 mb-3" id="skill">
+          <div class="card-header text-center">
+            <h5>            
+              <img src="./rocket_launch_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">   Skills
+            </h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+                <ul class="list-group">
+                  <li class="list-group-item">C/C++</li>
+                  <li class="list-group-item">JavaScript</li>
+                  <li class="list-group-item">Python</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="list-group">
+                  <li class="list-group-item">REST-API</li>
+                  <li class="list-group-item">NodeJs</li>
+                  <li class="list-group-item">Express</li>
+                  <li class="list-group-item">NestJs</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="list-group">
+                  <li class="list-group-item">MongoDB</li>
+                  <li class="list-group-item">SQL</li>
+                  <li class="list-group-item">Shell</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <ul class="list-group">
+                  <li class="list-group-item">Docker</li>
+                  <li class="list-group-item">AWS - EC2, SQS, SNS</li>
+                  <li class="list-group-item">Kafka</li>
+                  <li class="list-group-item">Kube*</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Section -->
+      <div class="row mt-5" id="experience">
+        <div class="card col-sm-12 mb-3">
+          <div class="card-header text-center">
+            <h5>
+              <img src="./work_history_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">   Experience
+            </h5>
+          </div>
+          <div class="card-body timeline">
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h6>Software Engineer (Backend) at Link</h6>
+                <p class="text-muted"><small>Jan 2021 - Present</small></p>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Responsible for loyalty and food business vertical services.</li>
+                  <li>Contributed to the open-source SDK of Link.</li>
+                  <li>Handled order volumes ranging from four to six hundred thousand a month.</li>
+                  <li>Configured services with auto-scaling and error-reporting tools like Sentry and Slack notifications.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h6>Salesforce Developer at Cognizant</h6>
+                <p class="text-muted"><small>Jul 2019 - Dec 2020</small></p>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Collaborated with Warner Bros.</li>
+                  <li>Worked on backend using JavaScript, APEX, and SOQL.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h6>Full-Stack Developer (MEAN) Intern at DailyObject</h6>
+                <p class="text-muted"><small>Jun 2018 - Jul 2018</small></p>
+              </div>
+              <div class="timeline-body">
+                <ul>
+                  <li>Deployed code to production with an active user base exceeding 10,000.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projects Section -->
+      <div class="row mt-5" id="projects">
+        <div class="card col-sm-12 mb-3">
+          <div class="card-header text-center">
+            <h5>
+              <img src="./network_check_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">   Projects
+            </h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h6>Project One</h6>
+                <p>Project description goes here...</p>
+              </li>
+              <li class="list-group-item">
+                <h6>Project Two</h6>
+                <p>Project description goes here...</p>
+              </li>
+              <li class="list-group-item">
+                <h6>Project Three</h6>
+                <p>Project description goes here...</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="row mt-5" id="contact">
+        <div class="card col-sm-12 mb-3">
+          <div class="card-header text-center">
+            <h5>
+              <img src="./contacts_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="">   Contact
+            </h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h6>Email</h6>
+                <p>email@example.com</p>
+              </li>
+              <li class="list-group-item">
+                <h6>Phone</h6>
+                <p>+1234567890</p>
+              </li>
+              <li class="list-group-item">
+                <h6>LinkedIn</h6>
+                <p><a href="https://linkedin.com/in/username">linkedin.com/in/username</a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const toggleSwitch = document.querySelector('.dark-mode-toggle');
+      toggleSwitch.addEventListener('change', () => {
+        if (toggleSwitch.checked) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.removeAttribute('data-theme');
+        }
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
